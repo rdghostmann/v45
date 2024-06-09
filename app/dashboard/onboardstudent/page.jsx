@@ -1,4 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
+import { IoEllipsisVertical } from "react-icons/io5";
+
 
 const AddStudentForm = () => {
   return (
@@ -8,7 +11,7 @@ const AddStudentForm = () => {
         <div className="flex justify-between items-center">
           <h3 className="text-xl font-bold">Add Students</h3>
           <ul className="breadcrumb flex space-x-2">
-            <li className="breadcrumb-item"><link href="students">Student</link></li>
+            <li className="breadcrumb-item"><Link href="students">Student</Link></li>
             <li className="breadcrumb-item active">Add Students</li>
           </ul>
         </div>
@@ -18,7 +21,7 @@ const AddStudentForm = () => {
         <form>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="col-span-1 sm:col-span-2 lg:col-span-4">
-              <h5 className="text-lg font-semibold mb-4">Student Information <span className="float-right"><link href="/"><i className="feather-more-vertical"></i></link></span></h5>
+              <h5 className="text-lg font-semibold mb-4">Student Information <span className="float-right"><Link href="/"><IoEllipsisVertical /></Link></span></h5>
             </div>
             <div>
               <p className="block font-medium" id="first-name" >First Name <span className="text-red-500">*</span></p>

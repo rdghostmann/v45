@@ -1,5 +1,13 @@
-import Image from 'next/image';
 import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import { IoEllipsisVertical } from "react-icons/io5";
+import { SlCalender } from "react-icons/sl";
+import { LuAlarmClock } from "react-icons/lu";
+import { CiBookmarkPlus } from "react-icons/ci";
+
+
+
 
 const StaffDashboard = () => {
   return (
@@ -9,7 +17,7 @@ const StaffDashboard = () => {
         <div className="flex justify-between items-center">
           <h3 className="text-xl font-bold">Welcome Jonathan!</h3>
           <ul className="breadcrumb flex space-x-2">
-            <li className="breadcrumb-item"><link href="index">Home</link></li>
+          {/* <Link href="/"><li className="breadcrumb-item">Home</li></Link> */}
             <li className="breadcrumb-item active">Teacher</li>
           </ul>
         </div>
@@ -44,7 +52,7 @@ const StaffDashboard = () => {
             <div className="card flex flex-col bg-white shadow-md rounded-lg p-4">
               <div className="flex justify-between items-center mb-4">
                 <h5 className="text-xl font-semibold">Upcoming Lesson</h5>
-                <link href="/" className="text-blue-500">View All Courses</link>
+                <Link href="/" className="text-blue-500">View All Courses</Link>
               </div>
               <div className="overflow-x-auto">
                 <table className="table-auto w-full">
@@ -56,15 +64,15 @@ const StaffDashboard = () => {
                             <b>Lessons 30</b>
                             <p>3.1 Ipsum dolor</p>
                             <ul className="flex space-x-2 text-gray-500">
-                              <li><i className="fas fa-calendar-alt"></i> Sep 5, 2022</li>
+                              <li><SlCalender />Sep 5, 2022</li>
                               <li>|</li>
-                              <li><i className="fas fa-clock"></i> 09:00 - 10:00 am</li>
+                              <li><LuAlarmClock /> 09:00 - 10:00 am</li>
                             </ul>
                           </div>
                         </td>
                         <td className="py-2 text-right">
                           <div className="flex flex-col items-end">
-                            <link href="/" className="text-green-500 mb-2">Confirmed</link>
+                            <Link href="/" className="text-green-500 mb-2">Confirmed</Link>
                             <button className="btn btn-blue">Reschedule</button>
                           </div>
                         </td>
@@ -98,7 +106,7 @@ const StaffDashboard = () => {
               <ul className="flex space-x-2 text-gray-500">
                 <li><span className="circle-blue"></span> Teacher</li>
                 <li><span className="circle-green"></span> Students</li>
-                <li className="star-menus"><link href="javascript:;"><i className="fas fa-ellipsis-v"></i></link></li>
+                <Link href="#"><li className="star-menus"><IoEllipsisVertical /></li></Link>
               </ul>
             </div>
             <div className="flex-grow">
@@ -110,7 +118,7 @@ const StaffDashboard = () => {
             <div className="flex justify-between items-center mb-4">
               <h5 className="text-xl font-semibold">Teaching History</h5>
               <ul className="flex space-x-2 text-gray-500">
-                <li className="star-menus"><link href="javascript:;"><i className="fas fa-ellipsis-v"></i></link></li>
+                <Link href="#"><li className="star-menus"><IoEllipsisVertical /></li></Link>
               </ul>
             </div>
             <div>
@@ -129,9 +137,9 @@ const StaffDashboard = () => {
                     <div>
                       <span className="block text-lg font-semibold">{activity.subject}</span>
                       <ul className="flex space-x-2 text-gray-500">
-                        <li><i className="fas fa-calendar-alt"></i> {activity.date}</li>
+                        <li><SlCalender /> {activity.date}</li>
                         <li>|</li>
-                        <li><i className="fas fa-clock"></i> {activity.time}</li>
+                        <li><LuAlarmClock /> {activity.time}</li>
                       </ul>
                     </div>
                     <button className="btn btn-blue">{activity.status}</button>
@@ -147,7 +155,7 @@ const StaffDashboard = () => {
           <div className="mt-6">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-bold">Upcoming Events</h2>
-              <link href="javascript:;"><i className="feather-plus"></i></link>
+              <Link href="#">  <CiBookmarkPlus />  </Link>
             </div>
             {[
               { date: "10 Jan", time: "08:00 am", subject: "Botony", description: "Lorem ipsum sit amet", startTime: "08:00 - 09:00 am" },
@@ -162,7 +170,7 @@ const StaffDashboard = () => {
               <div key={index} className="mb-4">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-lg font-bold">{event.date}</h3>
-                  <i className="fas fa-ellipsis-h"></i>
+                  <IoEllipsisVertical />
                 </div>
                 <div>
                   <p className="text-gray-500">{event.time}</p>

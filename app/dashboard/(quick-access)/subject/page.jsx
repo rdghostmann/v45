@@ -6,7 +6,7 @@ const subject = () => {
   return (
     <div>
         <AddSubject />
-        <ListSubject />
+        {/* <ListSubject /> */}
     </div>
   )
 }
