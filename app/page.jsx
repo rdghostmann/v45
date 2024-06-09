@@ -2,6 +2,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar/Navbar";
 import Header from "@/components/Header/Header";
 import LogoSchool from "@/components/LogoSchool/LogoSchool";
+import Footer from "@/components/Footer/Footer";
+
 
 
 import streamlineImg from '../public/assets/img/photo-1524995997946-a1c2e315a42f.jpg';
@@ -19,7 +21,6 @@ import security from '../public/assets/img/security.png'
 import teacherStaff from '../public/assets/img/teacher-staff.png'
 import student from '../public/assets/img/students.png'
 import admincontrol from '../public/assets/img/admin-control.png'
-import Footer from "@/components/Footer/Footer";
 
 
 export default function Home() {
