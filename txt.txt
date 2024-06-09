@@ -1,0 +1,51 @@
+
+Student field
+1)	name
+2)	dob
+3)	reg-no
+4)	password
+5)	confirm password
+6)	dateofentry
+7)	guardian-name
+8)	relationship
+9)	Profile picture
+
+10)	Class of entry
+
+11)	Hostel Name(for boarding)
+
+12)	House name(for school inter-house sports)
+
+13)	Gender
+
+14)	Guardian phone number (space for two phone numbers)
+
+15)	Address 
+
+16)	Subjects(remember from ss1 can have the access to choose their own subjects as we discussed. But others can't, the school does that for them)
+
+
+
+For the staff.
+
+1)	Full Name
+
+2)	Phone number 
+
+3)	Date of employment 
+
+4)	Profile picture (staff can change their profile pictures)
+
+5)	Assign role(in Radio button, Principal, vice Principal, Dean, Bursar they are the staff 1.
+
+6)	Teacher, form teacher, they are the staff 2,
+
+7)	Matron/hostel Mistress , patron/hostel master, cook, security, gate-keeper, canteen, driver, cleaner. They are the staff 3.)
+
+8)	Assign class
+
+9)	Assign subject
+
+10)	Make the teacher a form teacher for a particular class( for the attendance marking)
+
+11)	For staff 1, for primary and nursery, you can replace it with a headmistress/headmaster, and for the vice, it's assistant headmistress/headmaster. Because the nursery/primary section doesn't make use of Principal....
