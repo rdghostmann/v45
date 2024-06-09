@@ -10,7 +10,7 @@ const Header = () => {
       <div id="#hero" className="md:pt-8 flex flex-col-reverse items-center justify-center sm:flex-row gap-4 mb-12 ">
 
         <article className="w-full px-4 sm:w-1/2   ">
-          <h2 className=" max-w-lg mx-auto text-left text-3xl  mb-4 font-extrabold  sm:text-slate-900 dark:text-white">Manage Efficiently <span className=" dark:text-indigo-300">Academic Curriculum</span> with SchoolPilot.</h2>
+          <h2 className=" max-w-lg mx-auto text-left text-3xl mb-4 font-extrabold sm:text-slate-900 dark:text-white">Manage Efficiently <span className=" dark:text-indigo-300">Academic Curriculum</span> with SchoolPilot.</h2>
 
           <p className=" max-w-md mx-auto text-left sm:text-center md:mx-0 md:text-left lg:text-left text-lg my-4 sm:text-slate-700 dark:text-slate-400">Simplify school operations, record results, <br className="hidden sm:hidden" /> and manage payments effortlessly with  our Educational Management Software.</p>
 

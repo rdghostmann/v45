@@ -20,10 +20,10 @@ const AdminDashboard = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 my-4">
         <div className="bg-white flex items-center justify-between shadow-md rounded-lg p-4">
-          <span>Onboard Student</span> <Link href="dashboard"><MdAddCircleOutline size="20" color="blue"/></Link>
+          <span>Onboard Student</span> <Link href="/dashboard/onboardstudent"><MdAddCircleOutline size="20" color="blue"/></Link>
         </div>
         <div className="bg-white flex items-center justify-between shadow-md rounded-lg p-4">
-          <span>Onboard Staff</span> <Link href="dashboard"><MdAddCircleOutline size="20" color="blue"/></Link>
+          <span>Onboard Staff</span> <Link href="/dashboard/onboardstaff"><MdAddCircleOutline size="20" color="blue"/></Link>
         </div>
 
       </div>
@@ -149,26 +149,7 @@ const AdminDashboard = () => {
         </div>
       </div>
 
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 my-4">
-                {[
-                    { platform: 'facebook', count: '50,095', icon: 'social-icon-01.svg', text: 'Like us on facebook' },
-                    { platform: 'twitter', count: '48,596', icon: 'social-icon-02.svg', text: 'Follow us on twitter' },
-                    { platform: 'instagram', count: '52,085', icon: 'social-icon-03.svg', text: 'Follow us on instagram' },
-                    { platform: 'linkedin', count: '69,050', icon: 'social-icon-04.svg', text: 'Follow us on linkedin' },
-                ].map((social, index) => (
-                    <div key={index} className="col">
-                        <div className={`card flex items-center justify-center ${social.platform} p-4 text-center`}>
-                            <div className="social-likes">
-                                <p className="text-gray-600">{social.text}</p>
-                                <h6 className="text-2xl font-semibold">{social.count}</h6>
-                            </div>
-                            <div className="mt-4">
-                                <Image style={{ objectFit: "cover" }} src={`/assets/img/icons/${social.icon}`} alt="Social Icon" width={40} height={40} />
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
+
     </div>
   );
 };
