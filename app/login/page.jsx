@@ -16,14 +16,9 @@ const Login = () => {
             <Image src={loginImage} alt="Logo" className="w-1/2 h-auto" priority />
           </div>
           <div className="mt-6">
-            <h1 className="text-center text-2xl font-bold">Welcome to SchoolPilot🚀</h1>
-            <p className="text-center text-gray-600">
-              Need an account?
-              <Link href="/get-started">
-                <span className="text-indigo-600 hover:text-indigo-500">Sign Up</span>
-              </Link>
-            </p>
-            <h2 className="text-center text-xl font-semibold mt-4">Sign in</h2>
+            <h1 className="text-center text-2xl font-bold">Login to SchoolPilot🚀</h1>
+           
+            {/* <h2 className="text-center text-xl font-semibold mt-4">Sign in</h2> */}
 
             <form action="index.html" className="mt-8 space-y-6">
               <div className="rounded-md shadow-sm -space-y-px">

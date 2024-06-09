@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoEllipsisVertical } from "react-icons/io5";
+import { MdAddCircleOutline } from "react-icons/md";
+
 
 
 const AdminDashboard = () => {
@@ -10,13 +12,22 @@ const AdminDashboard = () => {
         <div className="flex justify-between items-center">
           <div>
             <h3 className="text-xl font-semibold">Welcome Admin!</h3>
-            <ul className="flex space-x-2 text-gray-600">
-              <li className="breadcrumb-item"><Link href="/">Home</Link></li>
-              <li className="breadcrumb-item active">Admin</li>
-            </ul>
-          </div>
+            <ul className="flex text-gray-600">
+              <li className="breadcrumb-item"><Link href="/">Home</Link></li>/
+              <li className="breadcrumb-item text-indigo-400">Admin</li>
+            </ul>          </div>
         </div>
       </div>
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 my-4">
+        <div className="bg-white flex items-center justify-between shadow-md rounded-lg p-4">
+          <span>Onboard Student</span> <Link href="dashboard"><MdAddCircleOutline size="20" color="blue"/></Link>
+        </div>
+        <div className="bg-white flex items-center justify-between shadow-md rounded-lg p-4">
+          <span>Onboard Staff</span> <Link href="dashboard"><MdAddCircleOutline size="20" color="blue"/></Link>
+        </div>
+
+      </div>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
         {[
@@ -32,7 +43,7 @@ const AdminDashboard = () => {
                 <h3 className="text-xl font-bold">{item.count}</h3>
               </div>
               <div>
-                <Image style={{ objectFit: "cover" }} src={`/assets/img/icons/${item.icon}`} alt="Dashboard Icon" width={40} height={40} />
+                <Image style={{ width:"auto", height:"auto", objectFit: "cover" }} src={`/assets/img/icons/${item.icon}`} alt="Dashboard Icon" width={40} height={40} />
               </div>
             </div>
           </div>
