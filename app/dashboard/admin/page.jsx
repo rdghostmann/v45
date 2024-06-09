@@ -13,7 +13,8 @@ const AdminDashboard = () => {
           <div>
             <h3 className="text-xl font-semibold">Welcome Admin!</h3>
             <ul className="flex text-gray-600">
-              <li className="breadcrumb-item"><Link href="/">Home</Link></li>/
+              <li className="breadcrumb-item"><Link href="/">Home</Link></li>
+              <li>/</li>
               <li className="breadcrumb-item text-indigo-400">Admin</li>
             </ul>          </div>
         </div>
