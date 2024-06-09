@@ -13,12 +13,12 @@ import img4 from '../public/assets/img/photo-1551887373-6edba6dacbb1.jpg'
 import img5 from '../public/assets/img/photo-1523240795612-9a054b0db644.jpg'
 import img6 from '../public/assets/img/photo-1485546246426-74dc88dec4d9.jpg'
 
-import backupSystem from '../public/assets/img/core-essential/backup-system2.png'
-import parents from '../public/assets/img/core-essential/parents.png'
-import security from '../public/assets/img/core-essential/security.png'
-import teacherStaff from '../public/assets/img/core-essential/teacher-staff.png'
-import student from '../public/assets/img/core-essential/students.png'
-import admincontrol from '../public/assets/img/core-essential/admin-control.png'
+import backupSystem from '../public/assets/img/backup-system2.png'
+import parents from '../public/assets/img/parents.png'
+import security from '../public/assets/img/security.png'
+import teacherStaff from '../public/assets/img/teacher-staff.png'
+import student from '../public/assets/img/students.png'
+import admincontrol from '../public/assets/img/admin-control.png'
 import Footer from "@/components/Footer/Footer";
 
 
