@@ -13,12 +13,12 @@ import img4 from '../public/assets/img/photo-1551887373-6edba6dacbb1.jpg'
 import img5 from '../public/assets/img/photo-1523240795612-9a054b0db644.jpg'
 import img6 from '../public/assets/img/photo-1485546246426-74dc88dec4d9.jpg'
 
-import backupSystem from '../public/assets/img//core-essential/backup-system2.png'
-import parents from '../public/assets/img//core-essential/parents.png'
-import security from '../public/assets/img//core-essential/security.png'
-import teacherStaff from '../public/assets/img//core-essential/teacher-staff.png'
-import student from '../public/assets/img//core-essential/students.png'
-import admincontrol from '../public/assets/img//core-essential/admin-control.png'
+import backupSystem from '../public/assets/img/core-essential/backup-system2.png'
+import parents from '../public/assets/img/core-essential/parents.png'
+import security from '../public/assets/img/core-essential/security.png'
+import teacherStaff from '../public/assets/img/core-essential/teacher-staff.png'
+import student from '../public/assets/img/core-essential/students.png'
+import admincontrol from '../public/assets/img/core-essential/admin-control.png'
 import Footer from "@/components/Footer/Footer";
 
 
@@ -78,6 +78,77 @@ export default function Home() {
         </ul>
 
       </section>
+
+      <section className="w-full p-6 bg-slate-100">
+
+        <div className="flex flex-col-reverse md:flex-row  max-w-7xl mx-auto ">
+
+
+          <div className="w-full md:w-1/2 p-2 space-y-2 ">
+
+            <ul className="max-w-md mx-auto flex flex-wrap space-x-4 items-center justify-around  p-2">
+
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={teacherStaff} alt="" width="660" height="664" priority />
+                Teacher
+              </li>
+
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={parents} alt="" width="660" height="664" priority />
+                Parent
+              </li>
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={student} alt="" width="660" height="664" priority />
+                Student
+              </li>
+
+            </ul>
+
+            <ul className="max-w-md mx-auto flex flex-wrap space-x-4 items-center justify-around  p-2">
+
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={security} alt="" width="660" height="664" priority />
+                Administrator
+              </li>
+
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={backupSystem} alt="" width="660" height="664" priority />
+                Backup<br/>system
+              </li>
+
+
+              <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
+                <Image className="w-full rounded-sm" src={admincontrol} alt="" width={660} height={664} priority />
+                Adminstrative<br /> Control
+              </li>
+
+            </ul>
+
+
+
+          </div>
+
+          <div className="w-full md:w-1/2 p-2 ">
+
+            <div className="space-y-3 sm:text-center ">
+
+              <h3 className="w-full mx-auto text-lg sm:w-3/5 md:w-full text-left font-bold text-slate-900 ">Core Essential Modules</h3>
+              <div className="w-full mx-auto text-base sm:w-3/5 md:w-full text-left">
+                <hr className=" mx-0 w-10 border border-blue-500 rounded-lg" />
+              </div>
+              <p className="w-full mx-auto text-base sm:w-3/5 md:w-full text-left text-slate-700 ">SchoolPilot has a Parent, Student, Teacher, Administrator panel with 24hour auto pilot backup system</p>
+
+              <p className="mx-auto text-base sm:w-3/5 md:w-full text-left text-slate-700 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate qui eaque
+                quod ipsum quam consequuntur nobis illum natus omnis, nulla </p>
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       <section className="mx-auto max-w-2xl mt-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div>
