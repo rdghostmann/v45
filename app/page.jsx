@@ -16,8 +16,8 @@ import img6 from '../public/assets/img/photo-1485546246426-74dc88dec4d9.jpg'
 import backupSystem from '../public/assets/img/backup-system2.png'
 import parents from '../public/assets/img/parents.png'
 import security from '../public/assets/img/security.png'
-import teacherStaff from '../public/assets/img/teacher-staff.png'
-import student from '../public/assets/img/students.png'
+// import teacherStaff from '../public/assets/img/teacher-staff.png'
+// import student from '../public/assets/img/students.png'
 import admincontrol from '../public/assets/img/admin-control.png'
 import Footer from "@/components/Footer/Footer";
 
@@ -94,11 +94,11 @@ export default function Home() {
               </li>
 
               <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
-                <Image className="w-full rounded-sm" src={parents} alt="" width="660" height="664" priority />
+                <Image className="w-full rounded-sm" src={parents} alt="core-essential" sizes="100vw" width="660" height="664" priority />
                 Parent
               </li>
               <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
-                <Image className="w-full rounded-sm" src={student} alt="" width="660" height="664" priority />
+                <Image className="w-full rounded-sm" src={student} alt="core-essential" sizes="100vw" width="660" height="664" priority />
                 Student
               </li>
 
@@ -107,18 +107,18 @@ export default function Home() {
             <ul className="max-w-md mx-auto flex flex-wrap space-x-4 items-center justify-around  p-2">
 
               <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
-                <Image className="w-full rounded-sm" src={security} alt="" width="660" height="664" priority />
+                <Image className="w-full rounded-sm" src={security} alt="core-essential" sizes="100vw" width="660" height="664" priority />
                 Administrator
               </li>
 
               <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
-                <Image className="w-full rounded-sm" src={backupSystem} alt="" width="660" height="664" priority />
+                <Image className="w-full rounded-sm" src={backupSystem} alt="core-essential" sizes="100vw" width="660" height="664" priority />
                 Backup<br/>system
               </li>
 
 
               <li className="max-w-24 h-auto p-2 bg-slate-200 rounded-sm text-center text-xs text-nowrap  ">
-                <Image className="w-full rounded-sm" src={admincontrol} alt="" width={660} height={664} priority />
+                <Image className="w-full rounded-sm" src={admincontrol} alt="core-essential" sizes="100vw" width={660} height={664} priority />
                 Adminstrative<br /> Control
               </li>
 
